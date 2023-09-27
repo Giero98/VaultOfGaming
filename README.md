@@ -1,1 +1,1 @@
-# VaultOfGaming
+# VOG - Vault Of Gaming
