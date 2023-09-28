@@ -12,7 +12,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>VaultOfGaming</ApplicationTitle>
+		<ApplicationTitle>VOG</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.vaultofgaming</ApplicationId>
@@ -32,10 +32,10 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\vog.svg" ForegroundFile="Resources\AppIcon\vog.svg" Color="#FFBD3F" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\vog_splash.svg" Color="#FFBD3F" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -46,6 +46,15 @@
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Platforms\Android\Resources\mipmap-ldpi\vog.png" />
+	  <None Remove="Platforms\Android\Resources\mipmap-mdpi\vog.png" />
+	  <None Remove="Platforms\Android\Resources\mipmap-hdpi\vog.png" />
+	  <None Remove="Platforms\Android\Resources\mipmap-xhdpi\vog.png" />
+	  <None Remove="Platforms\Android\Resources\mipmap-xxhdpi\vog.png" />
+	  <None Remove="Platforms\Android\Resources\mipmap-xxxhdpi\vog.png" />
 	</ItemGroup>
 
 	<ItemGroup>
