@@ -32,7 +32,6 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\vog.svg" ForegroundFile="Resources\AppIcon\vog.svg" Color="#FFBD3F" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\vog_splash.svg" Color="#FFBD3F" BaseSize="128,128" />
