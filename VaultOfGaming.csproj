@@ -15,7 +15,7 @@
 		<ApplicationTitle>VOG</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.vaultofgaming</ApplicationId>
+		<ApplicationId>com.bg.vaultofgaming</ApplicationId>
 		<ApplicationIdGuid>1111501d-ea4e-4b7a-8ddf-a129b882560e</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -32,10 +32,10 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\vog.svg" ForegroundFile="Resources\AppIcon\vog.svg" Color="#FFBD3F" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" ForegroundScale="0.65" Color="00FFFFFF" BaseSize="192, 192" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\vog_splash.svg" Color="#FFBD3F" BaseSize="456,456" />
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#FFBD3F" BaseSize="456, 456" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -49,20 +49,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Platforms\Android\Resources\mipmap-xxxhdpi\vog.png" />
-	  <None Remove="Resources\Images\vog.png" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Platforms\Android\Resources\mipmap-hdpi\" />
-	  <Folder Include="Platforms\Android\Resources\mipmap-ldpi\" />
-	  <Folder Include="Platforms\Android\Resources\mipmap-mdpi\" />
-	  <Folder Include="Platforms\Android\Resources\mipmap-xhdpi\" />
-	  <Folder Include="Platforms\Android\Resources\mipmap-xxhdpi\" />
 	</ItemGroup>
 
 </Project>
