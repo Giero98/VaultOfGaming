@@ -2,19 +2,92 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VaultOfGaming.Views.HomePage">
-    
     <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+        <VerticalStackLayout>
+            <HorizontalStackLayout
+                    Padding="12"
+                    BackgroundColor = "{StaticResource Primary}">
+                <Label Text="New Releases"
+                           FontSize="Medium"
+                           Style="{StaticResource Bold}"
+                           TextColor="Black"/>
+            </HorizontalStackLayout>
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+            <HorizontalStackLayout
+                    Padding="12">
+                <Label Text="Games list 1"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                    Padding="12"
+                    BackgroundColor = "{StaticResource Primary}">
+                <Label Text="Upcoming Games"
+                       FontSize="Medium"
+                       Style="{StaticResource Bold}"
+                       TextColor="Black"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                    Padding="12">
+                <Label Text="Games list 2"/>
+            </HorizontalStackLayout>
+
+            <VerticalStackLayout
+                    Padding="12"
+                    BackgroundColor = "{StaticResource Primary}">
+                <Label Text="Best Games on"
+                       FontSize="Medium"
+                       Style="{StaticResource Bold}"
+                       TextColor="Black"/>
+                <HorizontalStackLayout>
+                    <Picker x:Name="pickerBestGamesOn"
+                            FontSize="Small"
+                            TextColor="Black">
+                        <Picker.Items>
+                            <x:String>PS5</x:String>
+                            <x:String>PC</x:String>
+                            <x:String>Nintendo Switch</x:String>
+                            <x:String>PS4</x:String>
+                            <x:String>Xbox One</x:String>
+                            <x:String>Xbox Series X</x:String>
+                        </Picker.Items>
+                        <Picker.SelectedIndex>0</Picker.SelectedIndex>
+                    </Picker>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+            <HorizontalStackLayout
+                    Padding="12">
+                <Label Text="Games list 3"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                    Padding="12"
+                    BackgroundColor = "{StaticResource Primary}">
+                <Label Text="New on PlayStation Plus"
+                       FontSize="Medium"
+                       Style="{StaticResource Bold}"
+                       TextColor="Black"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                    Padding="12">
+                <Label Text="Games list 4"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                    Padding="12"
+                    BackgroundColor = "{StaticResource Primary}">
+                <Label Text="New on Xbox Game Pass"
+                       FontSize="Medium"
+                       Style="{StaticResource Bold}"
+                       TextColor="Black"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                    Padding="12">
+                <Label Text="Games list 5"/>
+            </HorizontalStackLayout>
 
         </VerticalStackLayout>
     </ScrollView>
