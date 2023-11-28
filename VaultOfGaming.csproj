@@ -56,6 +56,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="HtmlAgilityPack" Version="1.11.54" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
@@ -65,6 +66,9 @@
 	  </Compile>
 	  <Compile Update="Views\FavoritePage.xaml.cs">
 	    <DependentUpon>FavoritePage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\GameInfoPage.xaml.cs">
+	    <DependentUpon>GameInfoPage.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="Views\SearchPage.xaml.cs">
 	    <DependentUpon>SearchPage.xaml</DependentUpon>
@@ -76,6 +80,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Views\FavoritePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\GameInfoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\SearchPage.xaml">

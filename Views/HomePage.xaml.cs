@@ -33,7 +33,7 @@ namespace VaultOfGaming.Views
                 {
                     if(selectedItem.Title.Equals("Alan Wake II"))
                     {
-                        Navigation.PushAsync(new MenuPage());
+                        Navigation.PushAsync(new GameInfoPage(@"https://www.metacritic.com/game/alan-wake-ii/"));
                     }
                 }
                 (sender as CollectionView).SelectedItem = null;
