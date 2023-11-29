@@ -16,17 +16,17 @@
 
 
 
-            <CollectionView ItemsSource="{Binding Games_NewReales}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged" HorizontalScrollBarVisibility="Never">
+            <CollectionView ItemsSource="{Binding Games_NewRealesList}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged" HorizontalScrollBarVisibility="Never">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Horizontal"/>
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Padding="12">
-                            <Image Source="{Binding ImagePath}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160"/>
+                            <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160"/>
                             <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
-                                <Label Text="{Binding Rate}" Padding="5" Margin="5" FontSize="18" Style="{StaticResource Bold}" BackgroundColor="Green" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
-                                <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+                                <Label Text="{Binding Rate}" Padding="5" Margin="5" FontSize="18" Style="{StaticResource Bold}" BackgroundColor="{Binding BackgroundColorRate}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+                                <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap" WidthRequest="160"/>
                             </HorizontalStackLayout>
                         </StackLayout>
                     </DataTemplate>
@@ -43,17 +43,17 @@
                        TextColor="Black"/>
             </HorizontalStackLayout>
 
-            <CollectionView ItemsSource="{Binding Games_Upcoming}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged" HorizontalScrollBarVisibility="Never">
+            <CollectionView ItemsSource="{Binding Games_UpcomingList}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged" HorizontalScrollBarVisibility="Never">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Horizontal"/>
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Padding="12">
-                            <Image Source="{Binding ImagePath}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160"/>
+                            <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160"/>
                             <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
-                                <Label Text="{Binding Rate}" Padding="5" Margin="5" FontSize="18" Style="{StaticResource Bold}" BackgroundColor="Green" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
-                                <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+                                <Label Text="{Binding Rate}" Padding="5" Margin="5" FontSize="18" Style="{StaticResource Bold}" BackgroundColor="{Binding BackgroundColorRate}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+                                <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap" WidthRequest="160"/>
                             </HorizontalStackLayout>
                         </StackLayout>
                     </DataTemplate>

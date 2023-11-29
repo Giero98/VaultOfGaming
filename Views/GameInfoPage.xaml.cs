@@ -15,7 +15,7 @@ namespace VaultOfGaming.Views
 
             var gameTitle = htmlDoc.DocumentNode.SelectSingleNode("/html/body/div[1]/div/div/div[2]/div[1]/div[1]/div/div/div[2]/div[3]/div[1]/div");
 
-            GameTitle.Text = gameTitle.InnerText.Trim();
+            GameTitle.Text += gameTitle.InnerText.Trim();
         }
     }
 }
