@@ -25,7 +25,7 @@
                         <StackLayout Padding="12">
                             <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160"/>
                             <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
-                                <Label Text="{Binding Rate}" Padding="5" Margin="5" FontSize="18" Style="{StaticResource Bold}" BackgroundColor="{Binding BackgroundColorRate}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+                                <Label Text="{Binding Rate}" Padding="10" Margin="10" TextColor="Black" FontSize="18" Style="{StaticResource Bold}" BackgroundColor="{Binding BackgroundColorRate}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
                                 <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap" WidthRequest="160"/>
                             </HorizontalStackLayout>
                         </StackLayout>
@@ -52,7 +52,7 @@
                         <StackLayout Padding="12">
                             <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160"/>
                             <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
-                                <Label Text="{Binding Rate}" Padding="5" Margin="5" FontSize="18" Style="{StaticResource Bold}" BackgroundColor="{Binding BackgroundColorRate}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+                                <Label Text="{Binding Rate}" Padding="10" Margin="10" TextColor="Black" FontSize="18" Style="{StaticResource Bold}" BackgroundColor="{Binding BackgroundColorRate}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
                                 <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap" WidthRequest="160"/>
                             </HorizontalStackLayout>
                         </StackLayout>
@@ -84,10 +84,22 @@
                 </HorizontalStackLayout>
             </VerticalStackLayout>
 
-            <HorizontalStackLayout
-                    Padding="12">
-                <Label Text="Games list 3"/>
-            </HorizontalStackLayout>
+            <CollectionView ItemsSource="{Binding Games_BestGameOnList}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged" HorizontalScrollBarVisibility="Never">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="12">
+                            <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160"/>
+                            <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
+                                <Label Text="{Binding Rate}" Padding="10" Margin="10" TextColor="Black" FontSize="18" Style="{StaticResource Bold}" BackgroundColor="{Binding BackgroundColorRate}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+                                <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap" WidthRequest="160"/>
+                            </HorizontalStackLayout>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
             <HorizontalStackLayout
                     Padding="12"
@@ -98,10 +110,22 @@
                        TextColor="Black"/>
             </HorizontalStackLayout>
 
-            <HorizontalStackLayout
-                    Padding="12">
-                <Label Text="Games list 4"/>
-            </HorizontalStackLayout>
+            <CollectionView ItemsSource="{Binding Games_NewPSPlusList}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged" HorizontalScrollBarVisibility="Never">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="12">
+                            <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160"/>
+                            <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
+                                <Label Text="{Binding Rate}" Padding="10" Margin="10" TextColor="Black" FontSize="18" Style="{StaticResource Bold}" BackgroundColor="{Binding BackgroundColorRate}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+                                <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap" WidthRequest="160"/>
+                            </HorizontalStackLayout>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
             <HorizontalStackLayout
                     Padding="12"
@@ -112,10 +136,22 @@
                        TextColor="Black"/>
             </HorizontalStackLayout>
 
-            <HorizontalStackLayout
-                    Padding="12">
-                <Label Text="Games list 5"/>
-            </HorizontalStackLayout>
+            <CollectionView ItemsSource="{Binding Games_NewXboxGamePassList}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged" HorizontalScrollBarVisibility="Never">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="12">
+                            <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160"/>
+                            <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
+                                <Label Text="{Binding Rate}" Padding="10" Margin="10" TextColor="Black" FontSize="18" Style="{StaticResource Bold}" BackgroundColor="{Binding BackgroundColorRate}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+                                <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap" WidthRequest="160"/>
+                            </HorizontalStackLayout>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
         </VerticalStackLayout>
     </ScrollView>
