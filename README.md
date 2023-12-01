@@ -7,6 +7,7 @@ The App Logo is an original image created on the [Canva][canva] platform under l
 ...
 
 Application icons are used from Google from the website [Icons][google_icons] under license [Apache][apache].
+Parsing HTML code as an XPATH path and returning the document thanks to the [HTML Agility Pack][htmlagilitypack], which is licensed by [MIT][htmlagilitypackgithub]
 
 ## License
 [License MIT][license] Copyright © 2023 Bartosz Gieras
@@ -17,5 +18,7 @@ Application icons are used from Google from the website [Icons][google_icons] un
 
 [google_icons]: https://fonts.google.com/icons
 [apache]: https://www.apache.org/licenses/LICENSE-2.0.html
+[htmlagilitypack]: https://html-agility-pack.net/
+[htmlagilitypackgithub]: https://github.com/zzzprojects/html-agility-pack/tree/master
 
 [license]: https://github.com/Giero98/VaultOfGaming/blob/main/LICENSE.txt
