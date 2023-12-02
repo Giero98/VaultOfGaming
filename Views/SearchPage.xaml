@@ -4,14 +4,8 @@
              x:Class="VaultOfGaming.Views.SearchPage">
 
     <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Start">
-
-            <SearchBar Placeholder="Search..." 
-                       CancelButtonColor="{StaticResource Primary}"/>
-
+        <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Start">
+            <SearchBar Placeholder="Search..." CancelButtonColor="{StaticResource Primary}" SearchButtonPressed="OnSearchButtonPressed"/>
         </VerticalStackLayout>
     </ScrollView>
 

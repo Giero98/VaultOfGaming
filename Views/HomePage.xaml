@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VaultOfGaming.Views.HomePage">
-    
+
     <ScrollView>
         <VerticalStackLayout>
             <HorizontalStackLayout
@@ -14,8 +14,6 @@
                            TextColor="Black"/>
             </HorizontalStackLayout>
 
-
-
             <CollectionView ItemsSource="{Binding Games_NewRealesList}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged" HorizontalScrollBarVisibility="Never">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Horizontal"/>
@@ -23,24 +21,10 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Padding="12">
-
-
-
                             <Grid>
-                                <!-- Tło z rozmazanym obrazem -->
-                                <Image Source="{Binding CoverHttp}" Aspect="Fill" Opacity="0.3" />
-
-                                <!-- Główny obraz z widocznym obrazem -->
+                                <Image Source="{Binding CoverHttp}" Aspect="AspectFill" Opacity="0.2" />
                                 <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160" />
-
-                                <!-- Dodatkowe treści, jeśli są potrzebne -->
-                                <!-- ... -->
-
                             </Grid>
-
-
-
-                            <!-- <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160" BackgroundColor="Gray"/> -->
                             <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
                                 <Label Text="{Binding Rate}" Padding="10" Margin="10" TextColor="Black" FontSize="18" Style="{StaticResource Bold}" BackgroundColor="{Binding BackgroundColorRate}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
                                 <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap" WidthRequest="160"/>
@@ -49,7 +33,6 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            
 
             <HorizontalStackLayout
                     Padding="12"
@@ -67,7 +50,10 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Padding="12">
-                            <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160"/>
+                            <Grid>
+                                <Image Source="{Binding CoverHttp}" Aspect="AspectFill" Opacity="0.2" />
+                                <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160" />
+                            </Grid>
                             <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
                                 <Label Text="{Binding Rate}" Padding="10" Margin="10" TextColor="Black" FontSize="18" Style="{StaticResource Bold}" BackgroundColor="{Binding BackgroundColorRate}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
                                 <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap" WidthRequest="160"/>
@@ -108,7 +94,10 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Padding="12">
-                            <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160"/>
+                            <Grid>
+                                <Image Source="{Binding CoverHttp}" Aspect="AspectFill" Opacity="0.2" />
+                                <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160" />
+                            </Grid>
                             <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
                                 <Label Text="{Binding Rate}" Padding="10" Margin="10" TextColor="Black" FontSize="18" Style="{StaticResource Bold}" BackgroundColor="{Binding BackgroundColorRate}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
                                 <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap" WidthRequest="160"/>
@@ -134,7 +123,10 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Padding="12">
-                            <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160"/>
+                            <Grid>
+                                <Image Source="{Binding CoverHttp}" Aspect="AspectFill" Opacity="0.2" />
+                                <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160" />
+                            </Grid>
                             <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
                                 <Label Text="{Binding Rate}" Padding="10" Margin="10" TextColor="Black" FontSize="18" Style="{StaticResource Bold}" BackgroundColor="{Binding BackgroundColorRate}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
                                 <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap" WidthRequest="160"/>
@@ -160,7 +152,10 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout Padding="12">
-                            <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160"/>
+                            <Grid>
+                                <Image Source="{Binding CoverHttp}" Aspect="AspectFill" Opacity="0.2" />
+                                <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160" />
+                            </Grid>
                             <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
                                 <Label Text="{Binding Rate}" Padding="10" Margin="10" TextColor="Black" FontSize="18" Style="{StaticResource Bold}" BackgroundColor="{Binding BackgroundColorRate}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
                                 <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap" WidthRequest="160"/>
