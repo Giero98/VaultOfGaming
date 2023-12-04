@@ -182,7 +182,7 @@ namespace VaultOfGaming.Views
             return gameRate_overall;
         }
 
-        private Color SetColorAroundRating(string gameRate)
+        public static Color SetColorAroundRating(string gameRate)
         {
             if (!gameRate.Equals("tbd"))
             {

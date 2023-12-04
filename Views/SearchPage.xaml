@@ -5,8 +5,34 @@
 
     <ScrollView>
         <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Start">
-            <SearchBar Placeholder="Search..." CancelButtonColor="{StaticResource Primary}" SearchButtonPressed="OnSearchButtonPressed"/>
+            <SearchBar x:Name="searchBarData" Placeholder="Search..." CancelButtonColor="{StaticResource Primary}" SearchButtonPressed="OnSearchButtonPressed"/>
+
+
+            <CollectionView ItemsSource="{Binding Games_FromSearch}" SelectionMode="Single">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <HorizontalStackLayout Padding="12">
+                            <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160" />
+                            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                                <VerticalStackLayout>
+                                    <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap"/>
+                                    <HorizontalStackLayout>
+                                        <Label Text="{Binding RealaseDate}" FontSize="12" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap"/>
+                                        <Label Text="{Binding Platform}" FontSize="12" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap"/>
+                                    </HorizontalStackLayout>
+                                </VerticalStackLayout>
+                                <Label Text="{Binding Rate}" Padding="10" Margin="10" TextColor="Black" FontSize="25" Style="{StaticResource Bold}" BackgroundColor="{Binding BackgroundColorRate}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+                            </HorizontalStackLayout>
+                        </HorizontalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+
         </VerticalStackLayout>
     </ScrollView>
-
+    
 </ContentPage>
