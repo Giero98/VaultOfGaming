@@ -22,12 +22,12 @@
                     <DataTemplate>
                         <StackLayout Padding="12">
                             <Grid>
-                                <Image Source="{Binding CoverHttp}" Aspect="AspectFill" Opacity="0.2" />
+                                <Image Source="{Binding CoverHttp}" Aspect="Fill" Opacity="0.2" HeightRequest="300" WidthRequest="200" />
                                 <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160" />
                             </Grid>
                             <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
                                 <Label Text="{Binding Rate}" Padding="10" Margin="10" TextColor="Black" FontSize="18" Style="{StaticResource Bold}" BackgroundColor="{Binding BackgroundColorRate}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
-                                <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap" WidthRequest="160"/>
+                                <Label Text="{Binding Title}" FontSize="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap" WidthRequest="200"/>
                             </HorizontalStackLayout>
                         </StackLayout>
                     </DataTemplate>
@@ -51,7 +51,7 @@
                     <DataTemplate>
                         <StackLayout Padding="12">
                             <Grid>
-                                <Image Source="{Binding CoverHttp}" Aspect="AspectFill" Opacity="0.2" />
+                                <Image Source="{Binding CoverHttp}" Aspect="Fill" Opacity="0.2" HeightRequest="300" WidthRequest="200" />
                                 <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160" />
                             </Grid>
                             <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
@@ -95,7 +95,7 @@
                     <DataTemplate>
                         <StackLayout Padding="12">
                             <Grid>
-                                <Image Source="{Binding CoverHttp}" Aspect="AspectFill" Opacity="0.2" />
+                                <Image Source="{Binding CoverHttp}" Aspect="Fill" Opacity="0.2" HeightRequest="300" WidthRequest="200" />
                                 <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160" />
                             </Grid>
                             <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
@@ -124,7 +124,7 @@
                     <DataTemplate>
                         <StackLayout Padding="12">
                             <Grid>
-                                <Image Source="{Binding CoverHttp}" Aspect="AspectFill" Opacity="0.2" />
+                                <Image Source="{Binding CoverHttp}" Aspect="Fill" Opacity="0.2" HeightRequest="300" WidthRequest="200" />
                                 <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160" />
                             </Grid>
                             <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
@@ -153,7 +153,7 @@
                     <DataTemplate>
                         <StackLayout Padding="12">
                             <Grid>
-                                <Image Source="{Binding CoverHttp}" Aspect="AspectFill" Opacity="0.2" />
+                                <Image Source="{Binding CoverHttp}" Aspect="Fill" Opacity="0.2" HeightRequest="300" WidthRequest="200" />
                                 <Image Source="{Binding CoverHttp}" Aspect="AspectFit" HeightRequest="250" WidthRequest="160" />
                             </Grid>
                             <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
