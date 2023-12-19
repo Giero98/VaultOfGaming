@@ -155,7 +155,14 @@ namespace VaultOfGaming.Views
             else if (numberOfListGames == 3) nextGameList = 7;
 
             var gameTitle = htmlDoc.DocumentNode.SelectSingleNode(games_XPath_firstPath + (numberOfListGames + nextGameList) + games_XPath_secondPath + (gameItemFromTheList + 1) + "]/a/h3");
-            gamesTitle[numberOfListGames][gameItemFromTheList] = gameTitle.InnerText.Trim();
+            try
+            {
+                gamesTitle[numberOfListGames][gameItemFromTheList] = gameTitle.InnerText.Trim();
+            }
+            catch (Exception)
+            {
+                gamesTitle[numberOfListGames][gameItemFromTheList] = "";
+            }
         }
 
         private string GetLinkToCover(HtmlDocument htmlDoc, int numberOfListGames, int gameItemFromTheList)
@@ -166,9 +173,16 @@ namespace VaultOfGaming.Views
 
             var gameCover = htmlDoc.DocumentNode.SelectSingleNode(games_XPath_firstPath + (numberOfListGames + nextGameList) + games_XPath_secondPath + (gameItemFromTheList + 1) + "]/a/div[1]/div[2]/picture/img");
             Regex regex = new(@"src=""(.*?)""");
-            Match match = regex.Match(gameCover.OuterHtml.Trim());
-            string gameCover_http = match.Groups[1].Value.Replace("amp;", "");
-            return gameCover_http;
+            try
+            {
+                Match match = regex.Match(gameCover.OuterHtml.Trim());
+                string gameCover_http = match.Groups[1].Value.Replace("amp;", "");
+                return gameCover_http;
+            }
+            catch (Exception)
+            {
+                return "";
+            }
         }
 
         private string GetGameRateFromSite(HtmlDocument htmlDoc, int numberOfListGames, int gameItemFromTheList)
@@ -178,11 +192,22 @@ namespace VaultOfGaming.Views
             else if (numberOfListGames == 3) nextGameList = 7;
 
             var gameRate = htmlDoc.DocumentNode.SelectSingleNode(games_XPath_firstPath + (numberOfListGames + nextGameList) + games_XPath_secondPath + (gameItemFromTheList + 1) + "]/a/div[2]/div[1]/div/span");
-            string gameRate_overall = gameRate.InnerText.Trim();
-            return gameRate_overall;
+            try
+            {
+                string gameRate_overall = gameRate.InnerText.Trim();
+                return gameRate_overall;
+            }
+            catch (Exception e)
+            {
+                if(e is NullReferenceException)
+                { 
+                    return "tbd"; 
+                }
+                return "tbd";
+            }
         }
 
-        private Color SetColorAroundRating(string gameRate)
+        public static Color SetColorAroundRating(string gameRate)
         {
             if (!gameRate.Equals("tbd"))
             {
