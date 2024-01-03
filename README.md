@@ -5,7 +5,6 @@ The App Logo is an original image created on the [Canva][canva] platform under l
 
 ## Overview
 ...
-test
 
 Application icons are used from Google from the website [Icons][google_icons] under license [Apache][apache].\
 Parsing HTML code as an XPATH path and returning the document thanks to the [HTML Agility Pack][htmlagilitypack], which is licensed by [MIT][htmlagilitypackgithub]
