@@ -20,8 +20,6 @@ namespace VaultOfGaming.Views
         {
             InitializeComponent();
             BindingContext = this;
-            
-            itemStackLayout.WidthRequest = screenWidth;
         }
 
         private void OnSearchButtonPressed(object sender, EventArgs e)
@@ -61,7 +59,7 @@ namespace VaultOfGaming.Views
                     InfoAboutSearchGame game = new()
                     {
                         CoverHttp = gameCover_http,
-                        imageWidth = SetImageWidth(),
+                        ImageWidth = SetImageWidth(),
                         Title = gameTitle,
                         Rate = bestGameRate_overall,
                         BackgroundColorRate = HomePage.SetColorAroundRating(bestGameRate_overall),
@@ -88,7 +86,7 @@ namespace VaultOfGaming.Views
     public class InfoAboutSearchGame
     {
         public string CoverHttp { get; set; }
-        public string imageWidth {  get; set; }
+        public string ImageWidth {  get; set; }
         public string Title { get; set; }
         public string Rate { get; set; }
         public Color BackgroundColorRate { get; set; }

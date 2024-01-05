@@ -10,7 +10,7 @@ Application icons are used from Google from the website [Icons][google_icons] un
 Parsing HTML code as an XPATH path and returning the document thanks to the [HTML Agility Pack][htmlagilitypack], which is licensed by [MIT][htmlagilitypackgithub]
 
 ## License
-[License MIT][license] Copyright © 2023 Bartosz Gieras
+[License MIT][license] Copyright ï¿½ 2023 Bartosz Gieras
 
 [app_logo]: https://github.com/Giero98/VaultOfGaming/blob/main/Resources/AppIcon/appiconfg.svg
 [canva]: https://www.canva.com/

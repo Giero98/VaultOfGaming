@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VaultOfGaming.Views.SearchPage">
 
-    <ScrollView x:Name="itemStackLayout" >
-        <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Start">
-            <SearchBar x:Name="searchBarData" Placeholder="Search..." CancelButtonColor="{StaticResource Primary}" SearchButtonPressed="OnSearchButtonPressed"/>
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30" VerticalOptions="Start">
+            <SearchBar x:Name="searchBarData" HorizontalOptions="Fill" Placeholder="Search..." CancelButtonColor="{StaticResource Primary}" SearchButtonPressed="OnSearchButtonPressed"/>
 
 
             <CollectionView ItemsSource="{Binding Games_FromSearch}" SelectionMode="Single">
@@ -14,9 +14,9 @@
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <HorizontalStackLayout Padding="12" HorizontalOptions="Fill">
+                        <HorizontalStackLayout Padding="12" HorizontalOptions="Start">
                             <Image Source="{Binding CoverHttp}" Aspect="AspectFit" WidthRequest="{Binding imageWidth}"/>
-                            <VerticalStackLayout Padding="20" Margin="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                            <VerticalStackLayout Padding="20" Margin="20" HorizontalOptions="Fill" VerticalOptions="CenterAndExpand">
                                 <Label Text="{Binding Title}" FontSize="20" Style="{StaticResource Bold}" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap"/>
                                 <Label Text="{Binding RealaseDate}" FontSize="12" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap"/>
                                 <Label Text="{Binding Platform}" FontSize="12" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" LineBreakMode="WordWrap"/>
