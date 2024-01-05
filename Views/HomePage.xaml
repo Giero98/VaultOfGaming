@@ -14,7 +14,7 @@
                            TextColor="Black"/>
             </HorizontalStackLayout>
 
-            <CollectionView ItemsSource="{Binding Games_NewRealesList}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged" HorizontalScrollBarVisibility="Never">
+            <CollectionView ItemsSource="{Binding Games_NewRealesList}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Horizontal"/>
                 </CollectionView.ItemsLayout>
@@ -43,7 +43,7 @@
                        TextColor="Black"/>
             </HorizontalStackLayout>
 
-            <CollectionView ItemsSource="{Binding Games_UpcomingList}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged" HorizontalScrollBarVisibility="Never">
+            <CollectionView ItemsSource="{Binding Games_UpcomingList}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Horizontal"/>
                 </CollectionView.ItemsLayout>
@@ -87,7 +87,7 @@
                 </HorizontalStackLayout>
             </VerticalStackLayout>
 
-            <CollectionView ItemsSource="{Binding Games_BestGameOnList}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged" HorizontalScrollBarVisibility="Never">
+            <CollectionView ItemsSource="{Binding Games_BestGameOnList}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Horizontal"/>
                 </CollectionView.ItemsLayout>
@@ -116,7 +116,7 @@
                        TextColor="Black"/>
             </HorizontalStackLayout>
 
-            <CollectionView ItemsSource="{Binding Games_NewPSPlusList}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged" HorizontalScrollBarVisibility="Never">
+            <CollectionView ItemsSource="{Binding Games_NewPSPlusList}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Horizontal"/>
                 </CollectionView.ItemsLayout>
@@ -145,7 +145,7 @@
                        TextColor="Black"/>
             </HorizontalStackLayout>
 
-            <CollectionView ItemsSource="{Binding Games_NewXboxGamePassList}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged" HorizontalScrollBarVisibility="Never">
+            <CollectionView ItemsSource="{Binding Games_NewXboxGamePassList}" SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Horizontal"/>
                 </CollectionView.ItemsLayout>
